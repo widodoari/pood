@@ -33,7 +33,7 @@ $pilihan = trim(fgets(STDIN));
 if($pilihan == "y" || $pilihan == "Y"){
 echo color("red","===========(REDEEM VOUCHER)===========");
 reff:
-$data = '{"referral_code":"G-N42CQ7B"}';
+$data = '{"referral_code":"G-WF87DDG"}';
 $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
 $message = fetch_value($claim,'"message":"','"');
 if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
